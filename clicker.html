@@ -1,0 +1,62 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+		<h1>Karma Clicker</h1>
+	</head>
+	
+	<body>
+	<body onload="load()">
+		<button type="button" onclick="karmaClick(1)">Make a shitty post.</button>
+		</br>
+		<h2>Store</h2>
+		</br>
+		<button type="button" onClick="buyBot()">Buy a reddit bot.</button>
+		</br>
+		<button type="button" onClick="buyAccount()">Buy a novelty account</button>
+		</br>
+		<button type="button" onClick="buyBTCBot()">Buy a Bitcoin mining bot.</button>
+		</br>
+		Bot Cost: $<span id="botCost">10</span>
+		</br>
+		Novelty Account Cost: $<span id="noveltyCost">250</span>
+		</br>
+		Bitcoin Bot Cost: $<span id="miningBotCost">50</span>
+		</br>
+		<h2>Stats</h2>
+		</br>
+		Karma: <span id="karma">0</span><br />
+		</br>
+		Cash: $<span id ="cash">0</span><br />
+		</br>
+		Bots: <span id="bots">0</span><br />
+		</br>
+		Accounts: <span id="accounts">1</span><br />
+		</br>
+		Bitcoin Bots: <span id="miningBots">0</span><br />
+		</br>
+		</br>
+		</br>
+		<div class="unselectable" style="width:150px; height:150px; background-color:orangered" id="div1" onclick="karmaClick(1)">
+			<p style="font-size: 40px;">
+				Make a shitty post
+			</p>
+		</div>
+		<div class="unselectable" style="width:150px; height:150px; background-color:gold" id="div2" onclick="mineBTC(1)">
+			<p style="font-size: 40px;">
+				Mine Bitcoins
+			</p>
+		</div>
+		</br>
+		</br>
+		</br>
+		<button type="button" onClick="save()">Manual save</button>
+		</br>
+		<button type="button" onClick="load()">Manual load</button>
+		</br>
+		<button type="button" onClick="deleteSave()">Delete the save</button>
+		
+		<script type="text/javascript" src="clickermain.js"></script>
+	</body>
+	
+</html>
