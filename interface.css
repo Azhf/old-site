@@ -6,3 +6,8 @@
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
+.footer {
+	color: red;
+	font-size: 8;
+}
